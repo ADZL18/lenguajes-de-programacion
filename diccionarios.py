@@ -9,4 +9,5 @@ libro_calificaciones_matematicas["Vianey"]= "10"
 libro_calificaciones_matematicas["Alain"]= "10"
 libro_calificaciones_matematicas["juan"]= "9"
 libro_calificaciones_matematicas["carlos"]= "8"
+#un ejemplo
 print ("la calificacion kevin en matematicas es:",libro_calificaciones_matematicas["kevin"])
