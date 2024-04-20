@@ -77,3 +77,14 @@ ft= Moto("italika", "ft150", "150cc", "21000")
 diccionario_ft= ft.__dict__
 print(diccionario_ft)
 print("------------------------------------------------------------------------")
+
+
+#7 Escribe un programa en Python para eliminar duplicados del diccionario.
+def eliminar_llaves_duplicadas(diccionario):
+   sin_llaves_duplicadas= set(diccionario.key())
+   diccionario_sin_llaves_duplicadas = {key: diccionario[key] for key in sin_llaves_duplicadas}
+   return diccionario_sin_llaves_duplicadas
+motos = {
+    'Yamaha': 'MT-07', 'Honda': 'CBR600RR', 'Kawasaki': 'Ninja 300','Yamaha': 'YZF-R1','Honda': 'CBR1000RR', 'Suzuki': 'GSX-R750','Kawasaki': 'Ninja ZX-6R'}
+nuevo_dicccionario= eliminar_llaves_duplicadas(motos)
+print(nuevo_dicccionario)
