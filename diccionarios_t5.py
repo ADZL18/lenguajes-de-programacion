@@ -157,3 +157,42 @@ Diccionario_original= {'semestre1': {'Matematicas': 90, 'ciencia': 92}, 'semestr
 profundidad = profundidad_diccionario(Diccionario_original)
 print(profundidad)
 print("------------------------------------------------------------------------")
+
+
+#14 Escribe un programa en Python para acceder al elemento de la clave de un diccionario por índice. 
+#--como no proporcionó ningun diccionario en las instrucciones, invente uno para fines didacticos.--
+calificaciones = {
+    'Matemáticas': 9, 'Ciencias_sociales': 8, 'Historia': 7, 'Literatura': 8, 
+    'Inglés': 9, 'Física': 8, 'Química': 8, 'Laboratorio de Física': 9}
+
+keys = list(calificaciones.keys())
+
+print(keys[5], keys[0], keys[6])
+print("------------------------------------------------------------------------")
+
+
+#15 Escribe un programa en Python para convertir un diccionario en una lista de listas.
+def diccionario_a_lista_de_listas(diccionario):
+    lista= [[key, value] for key, value in diccionario.items()]
+    return lista
+diccionario_original=  {1: 'rojo', 2: 'verde', 3: 'negro', 4: 'blanco', 5: 'negro'}
+lista_con_listas= diccionario_a_lista_de_listas(diccionario_original)
+print(lista_con_listas)
+print("------------------------------------------------------------------------")
+
+#16 Escribe un programa en Python para filtrar números pares de un diccionario de valores. 
+def filtrar_numeros_pares(diccionario):
+    diccionario_filtrado = {}
+    for key, value in diccionario.items():
+        numeros_pares = [num for num in value if num % 2 == 0]
+        diccionario_filtrado[key] = numeros_pares
+    return diccionario_filtrado
+
+diccionario_original_1 = {'V': [1, 4, 6, 10], 'VI': [1, 4, 12], 'VII': [1, 3, 8]}
+diccionario_original_2 = {'V': [1, 3, 5], 'VI': [1, 5], 'VII': [2, 7, 9]}
+
+diccionario_filtrado_1 = filtrar_numeros_pares(diccionario_original_1)
+print(diccionario_filtrado_1)
+diccionario_filtrado_2 = filtrar_numeros_pares(diccionario_original_2)
+print(diccionario_filtrado_2)
+print("------------------------------------------------------------------------")
