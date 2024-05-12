@@ -1,2 +1,1 @@
 [enlaces de github.txt](https://github.com/ADZL18/lenguajes-de-programacion/files/15224285/enlaces.de.github.txt)
-[tarea.txt](https://github.com/ADZL18/lenguajes-de-programacion/files/15224540/tarea.txt)#hacer una clase en donde el programa espere un valor determinado en una estancia y marque error cuando no se le aplique un valor coherente. Que cada uno de los datos que se ingresen en la instancia sean coherentes, ejempl: que el nombre sea estrictamente en letras 
